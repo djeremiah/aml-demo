@@ -1,0 +1,4 @@
+11,Anurag,Saran,504 LimeLight Ct,edison,NJ,8820,BarOwner,34,M,Married,Personal-Savings
+12,David,Murphy,140 Broadway street,NewYork,NY,10039,IceCreamShop,32,M,Married,SmallBus
+13,Josh,West,163,wall street NewYork,NY,10039,GasStation,33,M,Single,SmallBus
+14,Derrick,Kittler,141 Broadway street,NewYork,NY,10039,CarWash,37,M,Married,SmallBus

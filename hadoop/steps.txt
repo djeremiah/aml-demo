@@ -1,0 +1,35 @@
+1.Create hdfs dir for the inpt files:
+$hdfs dfs -mkdir -p /user/pig/anurag/data
+2.Copy the input files to this hdfs dir:
+hdfs dfs -copyFromLocal /home/deepak/anurag/account.txt /user/pig/anurag/data/
+hdfs dfs -copyFromLocal /home/deepak/anurag/trans.txt /user/pig/anurag/data/
+3.Open Pig grunt shell in mapreduce mode
+$pig -x mapreduce
+$cd /user/pig/anurag/data
+4.Do ls here to see the input files are listed:
+grunt> ls
+hdfs://localhost:9000/user/pig/anurag/data/account.txt<r 1>	339
+hdfs://localhost:9000/user/pig/anurag/data/trans.txt<r 1>	419
+
+5.On the grunt shell run the below commands 1 by 1
+a.)
+grunt>transaction = load 'trans.txt' using PigStorage(',') as (TransactionID:int,AccountNo:int,FirstName:chararray,LastName:chararray,Amount:int,TransactionType:chararray,FromZipCode:chararray,
+ToZipCode:chararray,IPAddress:chararray,DeviceLocation:chararray,Country:chararray,State:chararray);
+
+grunt> describe transaction
+grunt> dump transaction
+
+b.)
+grunt>account = load 'account.txt' using PigStorage(',') as (AccountNo:int, FirstName:chararray, LastName:chararray, Street:chararray, City:chararray, State:chararray, ZipCode:chararray, Occupation:chararray, Age:int, Sex:chararray, MaritalStatus:chararray, AccountType:chararray);
+c.)
+grunt>C = foreach account generate AccountNo as id, ZipCode,Occupation;
+d.)
+grunt>jnd = join transaction by AccountNo, C by id;
+e.)
+grunt>D = group jnd by (C::ZipCode,transaction::TransactionType,C::Occupation);
+f.)
+grunt>E = foreach D generate
+flatten(group) as (zip,Tranaction,occupation),
+SUM($1.Amount) as total_spent,
+COUNT(jnd) as numOfTransactions,
+AVG($1.Amount) as avg;
