@@ -1,5 +1,5 @@
 # aml-demo
-Hadoop AML Setuo
+Hadoop AML Setup
 ================
 In this demo we will create a banking customer profile. This will allow us to use historical data to build a profile of a customer. First we will upload our data to the Hadoop cluster and use pig from grunt> command line. Then we will create a MapReduce job to calculate the customer profile based on zip, occupation, time. Finally we will integrate Drools with our MapReduce job to generate the decesion table.
 
