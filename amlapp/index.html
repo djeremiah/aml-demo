@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AMLAPP</title>
+     
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+   <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  
+
+    </head>
+    <script>
+
+    
+    $(document).ready(function() {
+    $("#btnSubmit").click(function(){
+        //alert("button");
+        var transid = $("#transactionid").val(); 
+        //alert(transid);
+          var myData={"transactionID":transid};
+			
+			$.ajax({
+					url : "getTransactionDetails.php",
+					type: "POST",
+					data : myData,
+					success: function(data,status,xhr)
+			{
+                    var transactionObj=JSON.parse(data);
+                    if (transactionObj.success == 1 )
+                    {
+                        alert("success =1");
+                    } else
+                    {
+                        alert("success=0");
+                    }
+                    
+                    
+            }
+                
+    }); 
+});
+        });
+    </script>
+    <body>
+        <div id="orange"></div>
+        <input type="text" id="transactionid" ></input>
+        <button id="btnSubmit" value="search" />
+    </body>
+</html>
+
+
+
