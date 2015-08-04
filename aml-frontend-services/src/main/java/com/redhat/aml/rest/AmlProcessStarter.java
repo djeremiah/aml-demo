@@ -1,4 +1,4 @@
-package com.redhat.aml.restservices;
+package com.redhat.aml.rest;
 import com.redhat.aml.model.*;
 
 import java.net.MalformedURLException;

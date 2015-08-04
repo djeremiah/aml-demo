@@ -1,4 +1,4 @@
-package com.redhat.aml.restservices;
+package com.redhat.aml.rest;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

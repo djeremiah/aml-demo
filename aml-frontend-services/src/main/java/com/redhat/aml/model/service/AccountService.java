@@ -2,18 +2,16 @@ package com.redhat.aml.model.service;
 
 import com.redhat.aml.model.*;
 
+import javax.inject.Singleton;
 import javax.persistence.*;
 
 import java.util.List;
 
+@Singleton
 public class AccountService {
+	
+	@PersistenceContext
     protected EntityManager em;
-
-    public AccountService(EntityManager em) {
-        this.em = em;
-    }
-
-
     
     public AccountDB createAccount (int accountNo, String firstname, String lastname,
 			String street, String city, String state, long zipcode,

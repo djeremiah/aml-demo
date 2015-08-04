@@ -100,6 +100,13 @@
 					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.jboss.as.plugins</groupId>
+				<artifactId>jboss-as-maven-plugin</artifactId>
+				<configuration>
+					<hostname>aml.opusdavei.org</hostname>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>

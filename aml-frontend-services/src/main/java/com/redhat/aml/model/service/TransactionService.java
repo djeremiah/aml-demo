@@ -2,18 +2,16 @@ package com.redhat.aml.model.service;
 
 import com.redhat.aml.model.*;
 
+import javax.inject.Singleton;
 import javax.persistence.*;
 
 import java.util.List;
 
+@Singleton
 public class TransactionService {
+	
+	@PersistenceContext
     protected EntityManager em;
-
-    public TransactionService(EntityManager em) {
-        this.em = em;
-    }
-
-
     
     public TransactionDB createTransaction (String firstname, String lastname, long accountNo,
 			long amount, String transactiontype, String fromloc, String toloc,
