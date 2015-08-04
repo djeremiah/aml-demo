@@ -5,44 +5,50 @@
 	<artifactId>aml-frontend-services</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
-	<name>BPMS Front-End Services</name>
+	<name>AML Demo Front-End Services</name>
 	<description>BPMS REST services for supporting javascript front-end</description>
+
+	<properties>
+		<jboss.bpms.version>6.1.1.GA-redhat-2</jboss.bpms.version>
+		<jboss.eap.version>6.4.0.GA</jboss.eap.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>redhat-public-repository</id>
+			<url>http://maven.repository.redhat.com/techpreview/all/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>org.jboss.bom.brms</groupId>
 				<artifactId>jboss-javaee-6.0-with-brms-bpmsuite</artifactId>
-				<version>6.1.1.GA-redhat-2</version>
+				<version>${jboss.bpms.version}</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
 			<dependency>
 				<groupId>org.jboss.bom</groupId>
 				<artifactId>eap6-supported-artifacts</artifactId>
-				<version>6.4.0.GA</version>
+				<version>${jboss.eap.version}</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
+		<!-- Spec dependencies -->
 		<dependency>
-			<groupId>org.kie.remote</groupId>
-			<artifactId>kie-remote-client</artifactId>
-		</dependency>
-		     <dependency>
-	 <groupId>javax.xml.bind</groupId>
-	 <artifactId>jaxb-api</artifactId>
-	 <version>2.2.11</version>
- </dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-core</artifactId>
+			<groupId>org.jboss.spec.javax.xml.bind</groupId>
+			<artifactId>jboss-jaxb-api_2.2_spec</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.jboss.spec.javax.ws.rs</groupId>
@@ -52,15 +58,31 @@
 			<groupId>javax.inject</groupId>
 			<artifactId>javax.inject</artifactId>
 		</dependency>
-		
+
+		<!-- BPMS Dependencies -->
+		<dependency>
+			<groupId>org.kie.remote</groupId>
+			<artifactId>kie-remote-client</artifactId>
+		</dependency>
+
+		<!-- Hibernate for local main -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+		</dependency>
+
 		<!-- Database driver -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.6</version>
 		</dependency>
-
 	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
