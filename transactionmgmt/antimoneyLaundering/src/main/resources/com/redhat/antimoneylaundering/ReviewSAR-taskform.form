@@ -1,0 +1,252 @@
+
+<form id="1017815893">
+<property name="name" value="ReviewSAR-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="9" name="account_state" type="InputText" id="2049269029">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;state (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/state"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="28" name="transaction_toZipCode" type="InputText" id="1681521849">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;toZipCode (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/toZipCode"/>
+<property name="outputBinding" value="transaction_outputSAR/toZipCode"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="30" name="transaction_transactionScore" type="InputTextPrimitiveInteger" id="913154861">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;transactionScore (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/transactionScore"/>
+<property name="outputBinding" value="transaction_outputSAR/transactionScore"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="10" name="account_street" type="InputText" id="1164682985">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;street (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/street"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="11" name="account_zipCode" type="InputText" id="550642256">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;zipCode (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/zipCode"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="23" name="transaction_ipAddress" type="InputText" id="534374620">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ipAddress (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/ipAddress"/>
+<property name="outputBinding" value="transaction_outputSAR/ipAddress"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="14" name="transaction_averageDailyDebit" type="InputTextPrimitiveInteger" id="888788405">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;averageDailyDebit (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/averageDailyDebit"/>
+<property name="outputBinding" value="transaction_outputSAR/averageDailyDebit"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="20" name="transaction_deviceType" type="InputText" id="536586806">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;deviceType (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/deviceType"/>
+<property name="outputBinding" value="transaction_outputSAR/deviceType"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="31" name="transaction_transactionType" type="InputText" id="222066092">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;transactionType (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/transactionType"/>
+<property name="outputBinding" value="transaction_outputSAR/transactionType"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="account_firstName" type="InputText" id="875116533">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;firstName (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/firstName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="16" name="transaction_averageDailytransfers" type="InputTextPrimitiveInteger" id="765691772">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;averageDailytransfers (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/averageDailytransfers"/>
+<property name="outputBinding" value="transaction_outputSAR/averageDailytransfers"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="18" name="transaction_averageWeeklyDeposit" type="InputTextPrimitiveInteger" id="1128469538">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;averageWeeklyDeposit (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/averageWeeklyDeposit"/>
+<property name="outputBinding" value="transaction_outputSAR/averageWeeklyDeposit"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="13" name="transaction_amount" type="InputTextPrimitiveInteger" id="296289291">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;amount (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/amount"/>
+<property name="outputBinding" value="transaction_outputSAR/amount"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="19" name="transaction_country" type="InputText" id="1979332313">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;country (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/country"/>
+<property name="outputBinding" value="transaction_outputSAR/country"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="account_accountType" type="InputText" id="2098616370">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;accountType (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/accountType"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="24" name="transaction_lastName" type="InputText" id="540042325">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;lastName (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/lastName"/>
+<property name="outputBinding" value="transaction_outputSAR/lastName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="account_lastName" type="InputText" id="763023516">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;lastName (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/lastName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="account_age" type="InputText" id="269025511">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;age (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/age"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="15" name="transaction_averageDailyDeposit" type="InputTextPrimitiveInteger" id="1356900047">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;averageDailyDeposit (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/averageDailyDeposit"/>
+<property name="outputBinding" value="transaction_outputSAR/averageDailyDeposit"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="0" name="account_accountNo" type="InputText" id="1716599072">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;accountNo (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/accountNo"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="12" name="transaction_accountNo" type="InputText" id="1856346260">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;accountNo (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/accountNo"/>
+<property name="outputBinding" value="transaction_outputSAR/accountNo"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="22" name="transaction_fromZipCode" type="InputText" id="1776362707">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;fromZipCode (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/fromZipCode"/>
+<property name="outputBinding" value="transaction_outputSAR/fromZipCode"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="account_city" type="InputText" id="1761342927">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;city (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/city"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="8" name="account_sex" type="InputText" id="1961594847">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;sex (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/sex"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="17" name="transaction_averageIncomeYearly" type="InputTextPrimitiveInteger" id="1107917501">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;averageIncomeYearly (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/averageIncomeYearly"/>
+<property name="outputBinding" value="transaction_outputSAR/averageIncomeYearly"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="7" name="account_occupation" type="InputText" id="1055567903">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;occupation (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/occupation"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="29" name="transaction_transactionID" type="InputText" id="2080148362">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;transactionID (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/transactionID"/>
+<property name="outputBinding" value="transaction_outputSAR/transactionID"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="6" name="account_marritialStatus" type="InputText" id="785778337">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;marritialStatus (account)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="account_inputSAR/marritialStatus"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="27" name="transaction_status" type="CheckBoxPrimitiveBoolean" id="43175205">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;status (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/status"/>
+<property name="outputBinding" value="transaction_outputSAR/status"/>
+<property name="fieldClass" value="boolean"/>
+</field>
+<field position="25" name="transaction_notes" type="InputText" id="2119111732">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;notes (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/notes"/>
+<property name="outputBinding" value="transaction_outputSAR/notes"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="26" name="transaction_state" type="InputText" id="353976162">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;state (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/state"/>
+<property name="outputBinding" value="transaction_outputSAR/state"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="21" name="transaction_firstName" type="InputText" id="1113842719">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;firstName (transaction)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="transaction_inputSAR/firstName"/>
+<property name="outputBinding" value="transaction_outputSAR/firstName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="account_inputSAR" name="#E9E371" type="dataModelerEntry" outId="" value="com.redhat.antimoneylaundering.Account" id="account"/>
+<dataHolder inputId="transaction_inputSAR" name="#FF54A7" type="dataModelerEntry" outId="transaction_outputSAR" value="com.redhat.antimoneylaundering.Transaction" id="transaction"/>
+</form>
