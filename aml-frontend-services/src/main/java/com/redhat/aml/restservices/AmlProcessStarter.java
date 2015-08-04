@@ -1,16 +1,16 @@
 package com.redhat.aml.restservices;
-import com.redhat.aml.model.*;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
 import org.kie.api.runtime.KieSession;
-import org.kie.api.runtime.manager.RuntimeEngine;
 import org.kie.remote.client.api.RemoteRestRuntimeEngineFactory;
 import org.kie.services.client.api.command.RemoteConfiguration;
 import org.kie.services.client.api.command.RemoteRuntimeEngine;
+
+import com.redhat.aml.domain.Account;
+import com.redhat.aml.domain.Transaction;
 
 public class AmlProcessStarter {
 	

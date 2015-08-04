@@ -1,18 +1,6 @@
 package com.redhat.aml.restservices;
 
-import com.redhat.aml.model.Account;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
-import java.io.StringReader;
-
-
-import javax.xml.bind.Unmarshaller;
-import javax.xml.transform.stream.StreamSource;
+import com.redhat.aml.domain.Account;
 
 //import org.apache.commons.lang3.StringUtils;
 //import org.eclipse.persistence.jaxb.UnmarshallerProperties;

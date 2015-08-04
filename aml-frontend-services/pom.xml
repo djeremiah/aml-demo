@@ -13,19 +13,6 @@
 		<jboss.eap.version>6.4.0.GA</jboss.eap.version>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>redhat-public-repository</id>
-			<url>http://maven.repository.redhat.com/techpreview/all/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-	</repositories>
-
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
@@ -45,6 +32,13 @@
 		</dependencies>
 	</dependencyManagement>
 	<dependencies>
+		<!-- project dependencies -->
+		<dependency>
+			<groupId>com.redhat.aml</groupId>
+			<artifactId>aml-domain</artifactId>
+			<version>1.0.0</version>		
+		</dependency>
+	
 		<!-- Spec dependencies -->
 		<dependency>
 			<groupId>org.jboss.spec.javax.xml.bind</groupId>
