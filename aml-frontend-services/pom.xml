@@ -7,11 +7,24 @@
 	<packaging>war</packaging>
 	<name>AML Demo Front-End Services</name>
 	<description>BPMS REST services for supporting javascript front-end</description>
-	
+
 	<properties>
 		<jboss.bpms.version>6.1.1.GA-redhat-2</jboss.bpms.version>
 		<jboss.eap.version>6.4.0.GA</jboss.eap.version>
 	</properties>
+
+	<repositories>
+		<repository>
+			<id>redhat-public-repository</id>
+			<url>http://maven.repository.redhat.com/techpreview/all/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 	<dependencyManagement>
 		<dependencies>
@@ -69,7 +82,7 @@
 			<version>5.1.6</version>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
