@@ -7,27 +7,12 @@
 	<name>AML Demo Domain Model</name>
 	<description>Domain Model for use in BPMS workflows as well as data transfer to front-end</description>
 
-	<properties>
-		<jboss.bpms.version>6.1.1.GA-redhat-2</jboss.bpms.version>
-	</properties>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.jboss.bom.brms</groupId>
-				<artifactId>jboss-javaee-6.0-with-brms-bpmsuite</artifactId>
-				<version>${jboss.bpms.version}</version>
-				<scope>import</scope>
-				<type>pom</type>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
-	
 	<dependencies>
 		<!-- Spec dependencies -->
 		<dependency>
 			<groupId>org.jboss.spec.javax.xml.bind</groupId>
 			<artifactId>jboss-jaxb-api_2.2_spec</artifactId>
+			<version>1.0.4.Final-redhat-3</version>
 		</dependency>
 	</dependencies>
 </project>
